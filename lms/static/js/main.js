@@ -4,7 +4,8 @@
   AjaxPrefix.addAjaxPrefix(jQuery, function() {
     return $("meta[name='path_prefix']").attr('content');
   });
-
+  // test
+  console.log("asdasdasd");
   $(function() {
     $.ajaxSetup({
       headers: {
