@@ -151,6 +151,7 @@ def _render_footer_html(request, show_openedx_logo, include_dependencies, includ
 
     return render_to_response("footer.html", context)
 
+breakpoint()
 
 @cache_control(must_revalidate=True, max_age=settings.FOOTER_BROWSER_CACHE_MAX_AGE)
 def footer(request):
@@ -219,7 +220,7 @@ def footer(request):
                 "image": "http://example.com/openedx.png"
             },
             "logo_image": "http://example.com/static/images/logo.png",
-            "copyright": "edX, Open edX and their respective logos are registered trademarks of edX Inc."
+            "copyright": "edX, Open edX and their respective logos are registered trademarks of edX Inc. nguyen8tn"
         }
 
 
