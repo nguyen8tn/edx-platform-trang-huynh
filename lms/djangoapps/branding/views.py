@@ -151,8 +151,6 @@ def _render_footer_html(request, show_openedx_logo, include_dependencies, includ
 
     return render_to_response("footer.html", context)
 
-breakpoint()
-
 @cache_control(must_revalidate=True, max_age=settings.FOOTER_BROWSER_CACHE_MAX_AGE)
 def footer(request):
     """Retrieve the branded footer.
